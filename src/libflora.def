@@ -568,8 +568,8 @@ EXPORTS
     _ZN7omnetpp14check_and_castIPN4inet13physicallayer11RadioMediumENS2_12IRadioMediumEEET_PT0_ @567
     _ZN7omnetpp14check_and_castIPN4inet13physicallayer21ConfigureRadioCommandENS_7cObjectEEET_PT0_ @568
     _ZN7omnetpp14check_and_castIPN4inet13physicallayer6IRadioENS_7cModuleEEET_PT0_ @569
-    _ZN7omnetpp14check_and_castIPN4inet15IInterfaceTableENS_7cModuleEEET_PT0_ @570
-    _ZN7omnetpp14check_and_castIPN4inet18StationaryMobilityENS_7cModuleEEET_PT0_ @571
+    _ZN7omnetpp14check_and_castIPN4inet14LinearMobilityENS_7cModuleEEET_PT0_ @570
+    _ZN7omnetpp14check_and_castIPN4inet15IInterfaceTableENS_7cModuleEEET_PT0_ @571
     _ZN7omnetpp14check_and_castIPN4inet6PacketENS_7cObjectEEET_PT0_ @572
     _ZN7omnetpp14check_and_castIPN4inet6PacketENS_8cMessageEEET_PT0_ @573
     _ZN7omnetpp14check_and_castIPN5flora10LoRaMediumEN4inet13physicallayer12IRadioMediumEEET_PT0_ @574
@@ -610,8 +610,8 @@ EXPORTS
     _ZN7omnetpp22check_and_cast_failureIPN4inet13physicallayer14WirelessSignalENS_8cMessageEEEvPT0_T_ @609
     _ZN7omnetpp22check_and_cast_failureIPN4inet13physicallayer21ConfigureRadioCommandENS_7cObjectEEEvPT0_T_ @610
     _ZN7omnetpp22check_and_cast_failureIPN4inet13physicallayer6IRadioENS_7cModuleEEEvPT0_T_ @611
-    _ZN7omnetpp22check_and_cast_failureIPN4inet15IInterfaceTableENS_7cModuleEEEvPT0_T_ @612
-    _ZN7omnetpp22check_and_cast_failureIPN4inet18StationaryMobilityENS_7cModuleEEEvPT0_T_ @613
+    _ZN7omnetpp22check_and_cast_failureIPN4inet14LinearMobilityENS_7cModuleEEEvPT0_T_ @612
+    _ZN7omnetpp22check_and_cast_failureIPN4inet15IInterfaceTableENS_7cModuleEEEvPT0_T_ @613
     _ZN7omnetpp22check_and_cast_failureIPN4inet6PacketENS_7cObjectEEEvPT0_T_ @614
     _ZN7omnetpp22check_and_cast_failureIPN4inet6PacketENS_8cMessageEEEvPT0_T_ @615
     _ZN7omnetpp22check_and_cast_failureIPN5flora10LoRaMediumEN4inet13physicallayer12IRadioMediumEEEvPT0_T_ @616
@@ -1328,26 +1328,26 @@ EXPORTS
     _ZTIN4inet13physicallayer9IReceiverE @1327 DATA
     _ZTIN4inet13physicallayer9NoiseBaseE @1328 DATA
     _ZTIN4inet14IPhysicalLayerE @1329 DATA
-    _ZTIN4inet14SignalPowerIndE @1330 DATA
-    _ZTIN4inet14SignalPowerReqE @1331 DATA
-    _ZTIN4inet15IInterfaceTableE @1332 DATA
-    _ZTIN4inet15MacProtocolBaseE @1333 DATA
-    _ZTIN4inet15OperationalBaseE @1334 DATA
-    _ZTIN4inet15ProtocolTagBaseE @1335 DATA
-    _ZTIN4inet16IPrintableObjectE @1336 DATA
-    _ZTIN4inet16InterfaceTagBaseE @1337 DATA
-    _ZTIN4inet16NetworkInterfaceE @1338 DATA
-    _ZTIN4inet16OperationalMixinIN7omnetpp13cSimpleModuleEEE @1339 DATA
-    _ZTIN4inet17MacAddressTagBaseE @1340 DATA
-    _ZTIN4inet17PacketProtocolTagE @1341 DATA
-    _ZTIN4inet18SignalPowerTagBaseE @1342 DATA
-    _ZTIN4inet18StationaryMobilityE @1343 DATA
-    _ZTIN4inet19IPhysicalLayerFrameE @1344 DATA
-    _ZTIN4inet19IRegionTaggedObjectE @1345 DATA
-    _ZTIN4inet19IntrusivePtrCounterINS_5ChunkEEE @1346 DATA
-    _ZTIN4inet19IntrusivePtrCounterINS_7TagBaseEEE @1347 DATA
-    _ZTIN4inet19LayeredProtocolBaseE @1348 DATA
-    _ZTIN4inet22StationaryMobilityBaseE @1349 DATA
+    _ZTIN4inet14LinearMobilityE @1330 DATA
+    _ZTIN4inet14SignalPowerIndE @1331 DATA
+    _ZTIN4inet14SignalPowerReqE @1332 DATA
+    _ZTIN4inet15IInterfaceTableE @1333 DATA
+    _ZTIN4inet15MacProtocolBaseE @1334 DATA
+    _ZTIN4inet15OperationalBaseE @1335 DATA
+    _ZTIN4inet15ProtocolTagBaseE @1336 DATA
+    _ZTIN4inet16IPrintableObjectE @1337 DATA
+    _ZTIN4inet16InterfaceTagBaseE @1338 DATA
+    _ZTIN4inet16NetworkInterfaceE @1339 DATA
+    _ZTIN4inet16OperationalMixinIN7omnetpp13cSimpleModuleEEE @1340 DATA
+    _ZTIN4inet17MacAddressTagBaseE @1341 DATA
+    _ZTIN4inet17PacketProtocolTagE @1342 DATA
+    _ZTIN4inet18MovingMobilityBaseE @1343 DATA
+    _ZTIN4inet18SignalPowerTagBaseE @1344 DATA
+    _ZTIN4inet19IPhysicalLayerFrameE @1345 DATA
+    _ZTIN4inet19IRegionTaggedObjectE @1346 DATA
+    _ZTIN4inet19IntrusivePtrCounterINS_5ChunkEEE @1347 DATA
+    _ZTIN4inet19IntrusivePtrCounterINS_7TagBaseEEE @1348 DATA
+    _ZTIN4inet19LayeredProtocolBaseE @1349 DATA
     _ZTIN4inet5ChunkE @1350 DATA
     _ZTIN4inet5CoordE @1351 DATA
     _ZTIN4inet5power13IEnergySourceE @1352 DATA
@@ -1451,8 +1451,8 @@ EXPORTS
     _ZTIPN4inet13physicallayer14WirelessSignalE @1450 DATA
     _ZTIPN4inet13physicallayer21ConfigureRadioCommandE @1451 DATA
     _ZTIPN4inet13physicallayer6IRadioE @1452 DATA
-    _ZTIPN4inet15IInterfaceTableE @1453 DATA
-    _ZTIPN4inet18StationaryMobilityE @1454 DATA
+    _ZTIPN4inet14LinearMobilityE @1453 DATA
+    _ZTIPN4inet15IInterfaceTableE @1454 DATA
     _ZTIPN4inet6PacketE @1455 DATA
     _ZTIPN5flora10LoRaMediumE @1456 DATA
     _ZTIPN5flora11LoRaOptionsE @1457 DATA
@@ -1537,26 +1537,26 @@ EXPORTS
     _ZTSN4inet13physicallayer9IReceiverE @1536 DATA
     _ZTSN4inet13physicallayer9NoiseBaseE @1537 DATA
     _ZTSN4inet14IPhysicalLayerE @1538 DATA
-    _ZTSN4inet14SignalPowerIndE @1539 DATA
-    _ZTSN4inet14SignalPowerReqE @1540 DATA
-    _ZTSN4inet15IInterfaceTableE @1541 DATA
-    _ZTSN4inet15MacProtocolBaseE @1542 DATA
-    _ZTSN4inet15OperationalBaseE @1543 DATA
-    _ZTSN4inet15ProtocolTagBaseE @1544 DATA
-    _ZTSN4inet16IPrintableObjectE @1545 DATA
-    _ZTSN4inet16InterfaceTagBaseE @1546 DATA
-    _ZTSN4inet16NetworkInterfaceE @1547 DATA
-    _ZTSN4inet16OperationalMixinIN7omnetpp13cSimpleModuleEEE @1548 DATA
-    _ZTSN4inet17MacAddressTagBaseE @1549 DATA
-    _ZTSN4inet17PacketProtocolTagE @1550 DATA
-    _ZTSN4inet18SignalPowerTagBaseE @1551 DATA
-    _ZTSN4inet18StationaryMobilityE @1552 DATA
-    _ZTSN4inet19IPhysicalLayerFrameE @1553 DATA
-    _ZTSN4inet19IRegionTaggedObjectE @1554 DATA
-    _ZTSN4inet19IntrusivePtrCounterINS_5ChunkEEE @1555 DATA
-    _ZTSN4inet19IntrusivePtrCounterINS_7TagBaseEEE @1556 DATA
-    _ZTSN4inet19LayeredProtocolBaseE @1557 DATA
-    _ZTSN4inet22StationaryMobilityBaseE @1558 DATA
+    _ZTSN4inet14LinearMobilityE @1539 DATA
+    _ZTSN4inet14SignalPowerIndE @1540 DATA
+    _ZTSN4inet14SignalPowerReqE @1541 DATA
+    _ZTSN4inet15IInterfaceTableE @1542 DATA
+    _ZTSN4inet15MacProtocolBaseE @1543 DATA
+    _ZTSN4inet15OperationalBaseE @1544 DATA
+    _ZTSN4inet15ProtocolTagBaseE @1545 DATA
+    _ZTSN4inet16IPrintableObjectE @1546 DATA
+    _ZTSN4inet16InterfaceTagBaseE @1547 DATA
+    _ZTSN4inet16NetworkInterfaceE @1548 DATA
+    _ZTSN4inet16OperationalMixinIN7omnetpp13cSimpleModuleEEE @1549 DATA
+    _ZTSN4inet17MacAddressTagBaseE @1550 DATA
+    _ZTSN4inet17PacketProtocolTagE @1551 DATA
+    _ZTSN4inet18MovingMobilityBaseE @1552 DATA
+    _ZTSN4inet18SignalPowerTagBaseE @1553 DATA
+    _ZTSN4inet19IPhysicalLayerFrameE @1554 DATA
+    _ZTSN4inet19IRegionTaggedObjectE @1555 DATA
+    _ZTSN4inet19IntrusivePtrCounterINS_5ChunkEEE @1556 DATA
+    _ZTSN4inet19IntrusivePtrCounterINS_7TagBaseEEE @1557 DATA
+    _ZTSN4inet19LayeredProtocolBaseE @1558 DATA
     _ZTSN4inet5ChunkE @1559 DATA
     _ZTSN4inet5CoordE @1560 DATA
     _ZTSN4inet5power13IEnergySourceE @1561 DATA
@@ -1660,8 +1660,8 @@ EXPORTS
     _ZTSPN4inet13physicallayer14WirelessSignalE @1659 DATA
     _ZTSPN4inet13physicallayer21ConfigureRadioCommandE @1660 DATA
     _ZTSPN4inet13physicallayer6IRadioE @1661 DATA
-    _ZTSPN4inet15IInterfaceTableE @1662 DATA
-    _ZTSPN4inet18StationaryMobilityE @1663 DATA
+    _ZTSPN4inet14LinearMobilityE @1662 DATA
+    _ZTSPN4inet15IInterfaceTableE @1663 DATA
     _ZTSPN4inet6PacketE @1664 DATA
     _ZTSPN5flora10LoRaMediumE @1665 DATA
     _ZTSPN5flora11LoRaOptionsE @1666 DATA

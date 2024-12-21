@@ -15,10 +15,10 @@
 
 package flora.LoraNode;
 
-import inet.mobility.static.StationaryMobility;
 import inet.networklayer.common.InterfaceTable;
 import inet.applications.contract.IApp;
 import flora.LoRa.LoRaNic;
+import inet.mobility.contract.IMobility;
 
 
 module LoRaNode
@@ -37,8 +37,8 @@ module LoRaNode
         interfaceTable: InterfaceTable {
             @display("p=30,26");
         }
-        mobility: StationaryMobility {
-            @display("p=24,88");
+        mobility: <default("StationaryMobility")> like IMobility {
+             @display("p=24,88");
         }
         LoRaNic: LoRaNic {
             @display("p=137,239");

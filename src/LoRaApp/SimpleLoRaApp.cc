@@ -14,7 +14,8 @@
 // 
 
 #include "SimpleLoRaApp.h"
-#include "inet/mobility/static/StationaryMobility.h"
+//#include "inet/mobility/static/StationaryMobility.h"
+#include "inet/mobility/single/LinearMobility.h"
 #include "../LoRa/LoRaTagInfo_m.h"
 #include "inet/common/packet/Packet.h"
 
@@ -32,7 +33,7 @@ void SimpleLoRaApp::initialize(int stage)
         // Generate random location for nodes if circle deployment type
         if (strcmp(host->par("deploymentType").stringValue(), "circle")==0) {
            coordsValues = generateUniformCircleCoordinates(host->par("maxGatewayDistance").doubleValue(), host->par("gatewayX").doubleValue(), host->par("gatewayY").doubleValue());
-           StationaryMobility *mobility = check_and_cast<StationaryMobility *>(host->getSubmodule("mobility"));
+           LinearMobility *mobility = check_and_cast<LinearMobility *>(host->getSubmodule("mobility"));
            mobility->par("initialX").setDoubleValue(coordsValues.first);
            mobility->par("initialY").setDoubleValue(coordsValues.second);
         }
@@ -97,7 +98,7 @@ std::pair<double,double> SimpleLoRaApp::generateUniformCircleCoordinates(double 
 void SimpleLoRaApp::finish()
 {
     cModule *host = getContainingNode(this);
-    StationaryMobility *mobility = check_and_cast<StationaryMobility *>(host->getSubmodule("mobility"));
+    LinearMobility *mobility = check_and_cast<LinearMobility *>(host->getSubmodule("mobility"));
     Coord coord = mobility->getCurrentPosition();
     recordScalar("positionX", coord.x);
     recordScalar("positionY", coord.y);
